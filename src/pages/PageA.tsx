@@ -13,7 +13,7 @@ export default function PageA() {
     const personValue = parseFloat(personInput);
 
     if (!isNaN(moneyValue) && !isNaN(personValue) && personValue > 0) {
-      setresult((moneyValue / personValue).toFixed(2));
+      setresult(parseFloat((moneyValue / personValue).toFixed(2)));
     } else {
       setresult(0.00);
     }

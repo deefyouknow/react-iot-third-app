@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
 
 export default function Navbariot() {
-  const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="bg-sky-600 row-span-full h-15 flex justify-center items-center">
       <div className='flex text-white'>
