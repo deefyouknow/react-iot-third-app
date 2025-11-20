@@ -4,7 +4,8 @@ import { useState } from 'react';
 export default function Navbariot() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="bg-amber-200">
+    <nav className="bg-sky-600 row-span-full h-15 flex justify-center items-center">
+      <div className='flex text-white'>
       <ul className="flex justify-center">
         <li className="mx-4">
           <Link to="/">หน้าหลัก</Link>
@@ -18,7 +19,8 @@ export default function Navbariot() {
         <li className="mx-4">
           <Link to="/paged">บริการ</Link>
         </li>
-      </ul>
+      </ul>        
+      </div>
     </nav>
   );
 }
